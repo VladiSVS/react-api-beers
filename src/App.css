@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+* {
+  font-family: 'Roboto Slab', serif;
+}
+
+/* Home */
+
+#homeSection {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+#homeSection > div{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+#homeSection > div > a {
+  text-decoration: none;
+  font-size: 2.5em;
+  color: #fff;
+  background: gold;
+  padding: 3% 3%;
+}
+
+/* BeerItems */
+
+.beerItems {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.beerItems {
+  display: flex;
+  gap: 5%;
+  padding: 2%;
+  height: 40vh;
+  border-bottom: 2px solid #dcdcde;
+}
+
+.beerItems > div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20em;
+}
+
+.beerItems > div:first-of-type > img {
+  width: 25%;
+}
+
+.beerItems > div:last-of-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30em;
+}
+
+.beerItems > div:last-of-type > a {
+  width: 5em;
+  text-decoration: none;
+  background: gold;
+  color: #fff;
+  padding: 0.5em 2em;
+  border-radius: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.beerItems > div:last-of-type > h1 {
+  font-size: 3em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.beerItems > div:last-of-type > h2 {
+  color: gold;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+/* Logo */
+
+.logo{
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  background: gold;
+  bottom: 0;
+}
+
+.logo > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+}
+
+/* BeersItem */
+
+.beerItemList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.beerItemList > div {
+  width: 25%;
+}
+
+.beerItemList > div > div:first-of-type {
+  text-align: center;
+}
+
+.beerItemList > div > div > img {
+  width: 20%;
+}
+
+.beerItemList > div > h1 {
+  font-size: 3em;
+  margin-top: 5%;
+  margin-bottom: 0;
+}
+
+.beerItemList > div > h2 {
+  font-size: 1.1em;
+  color: gold;
+  margin-bottom: 5%;
+}
+
+.beerItemList > div > div > div > span {
+  color: #33333380;
+  font-size: 0.9em;
+}
+
+.beerItemList > div > a > img {
+  background: gold;
+  padding: 3%;
+  border-radius: 50%;
+}
