@@ -8,26 +8,21 @@ class BeerItemsList extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            propsData: this.props.propsData,
+            propsReady: this.props.propsReady
         }
     }
 
-    componentDidMount() {
-        fetch('https://ih-beers-api2.herokuapp.com/beers')
-            .then(response => response.json())
-            .then(json => this.setState({ data: json }, () => {
-                console.log("Data is Raedy")
-                this.setState({ dataIsReady: true })
-            }))
-    }
-
     render() {
+        console.log(this.state.propsData)
+        console.log(this.state.propsReady)
         return (
-            <section>
-                {this.state.dataIsReady && this.state.data.map(elt =>
+            <section >
+                {this.state.propsReady && this.state.propsData.map(elt =>
                     <BeersItems imgUrl={elt.image_url} name={elt.name} tagline={elt.tagline} id={elt._id} key={elt._id} />
                 )}
-                <Link to="/"><Logo /></Link>
-            </section>
+                < Link to="/" > <Logo /></Link >
+            </section >
         );
     }
 }

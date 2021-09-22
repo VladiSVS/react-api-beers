@@ -13,7 +13,7 @@ class Home extends Component {
                 </div>
                 <div>
                     <img src="../img/randomBeer.png" alt=""></img>
-                    <Link to="/">Random Beers</Link>
+                    <Link to="/randomBeer">Random Beers</Link>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, a, eleifend vitae varius venenatis. </p>
                 </div>
             </section>
